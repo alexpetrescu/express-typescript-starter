@@ -1,6 +1,6 @@
 {
 	"all": true,
-	"reporter": "lcov",
+	"reporter": ["text", "lcov"],
 	"reporter-dir": "./coverage",
 	"extensions": ["ts", "tsc"],
 	"include": ["src/**/*.ts"],
