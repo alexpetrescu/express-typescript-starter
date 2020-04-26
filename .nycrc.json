@@ -4,5 +4,5 @@
 	"reporter-dir": "./coverage",
 	"extensions": ["ts", "tsc"],
 	"include": ["src/**/*.ts"],
-	"exclude": ["**/*.spec.ts"]
+	"exclude": ["src/**/*.spec.ts", "src/app.ts", "src/server.ts"]
 }
