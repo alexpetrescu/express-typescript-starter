@@ -1,10 +1,17 @@
 import express from "express";
+import { AppVariable, AppDefault } from "./constants/app.constant";
 
 const app = express();
 
 // App configuration
-app.set("port", process.env.NODE_PORT || 3000);
-app.set("env", process.env.NODE_ENV || "DEV");
+app.set(
+	AppVariable.NODE_PORT,
+	process.env[AppVariable.NODE_PORT] || AppDefault.NODE_PORT
+);
+app.set(
+	AppVariable.NODE_ENV,
+	process.env[AppVariable.NODE_ENV] || AppDefault.NODE_ENV
+);
 
 // App routes
 app.get("/", (_req, res) => {
